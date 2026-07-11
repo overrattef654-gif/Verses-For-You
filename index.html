@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>God Wants to Speak to You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Georgia, serif;
+      text-align: center;
+      padding: 40px;
+      background: #fffaf0;
+      color: #333;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    #verse {
+      margin-top: 40px;
+      font-size: 24px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>God Wants to Speak to You</h1>
+
+  <div id="verse"></div>
+
+<script>
+const verses = [
+  "Jeremiah 29:11 — For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.",
+  "Philippians 4:13 — I can do all things through Christ who strengthens me.",
+  "Psalm 46:10 — Be still, and know that I am God.",
+  "John 3:16 — For God so loved the world that He gave His one and only Son.",
+  "Proverbs 3:5 — Trust in the Lord with all your heart and lean not on your own understanding."
+];
+
+const randomVerse = verses[Math.floor(Math.random() * verses.length)];
+
+document.getElementById("verse").innerHTML = randomVerse;
+</script>
+
+</body>
+</html>
